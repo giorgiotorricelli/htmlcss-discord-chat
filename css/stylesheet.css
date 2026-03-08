@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 /*General*/
@@ -11,6 +12,10 @@ img {
     width: 100%;
     position: absolute;
     border-radius: 100%;
+}
+
+main {
+    background-color: black;
 }
 
 /*Utils*/
@@ -41,19 +46,26 @@ img {
 }
 
 .server {
-    background-color: blueviolet;
     flex-basis: var(--server-size);
     width: var(--server-size);
     position: relative;
 }
+
 
 .logo {
     border-radius: 0;
 }
 
 .messages {
-    background-color: red;
+    background-color: rgb(41, 41, 41);
     flex-basis: 100%;
+    margin-top: 10px;
+    border-radius: 10px 0 0 0;
+    padding: 10px 3px 0 0;
+}
+
+h2 {
+    margin-left: 20px;
 }
 
 main {
@@ -69,4 +81,82 @@ main {
     bottom: 0;
     translate: -50% 0;
 }
+
+.search {
+    position: relative;
+    right: 50%;
+    translate: 0 -30%;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.search-button {
+    border-radius: 50%;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    background-color: rgb(92, 92, 92);
+}
+
+.search-icon {
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(135deg) brightness(108%) contrast(102%);
+    width: 25px;
+}
+
+.add-friend-button {
+    width: 80%;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(92, 92, 92);
+    color: white;
+}
+
+.text {
+    height: 50px;
+    border: 2px solid brown;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 3px;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+p {
+    line-height: 0.7;
+    font-size: 14px;
+}
+
+p, .nome, .time {
+    color: gray;
+}
+
+.text:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(69, 69, 69);
+}
+
 
