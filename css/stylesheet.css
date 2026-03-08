@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/*General*/
+
+img {
+    width: 100%;
+    position: absolute;
+    border-radius: 100%;
+}
+
 /*Utils*/
 
 .container {
@@ -36,6 +44,11 @@
     background-color: blueviolet;
     flex-basis: var(--server-size);
     width: var(--server-size);
+    position: relative;
+}
+
+.logo {
+    border-radius: 0;
 }
 
 .messages {
